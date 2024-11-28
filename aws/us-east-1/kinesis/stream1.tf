@@ -1,5 +1,6 @@
 resource "aws_kinesis_stream" "test_stream" {
-  name             = "simple-stream"
+  count = var.deploy_kinesis ? 1: 0
+  name             = "cloudrover-test-simple-stream"
   shard_count      = 1
   
   stream_mode_details {
