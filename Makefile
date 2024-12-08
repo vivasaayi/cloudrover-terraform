@@ -8,11 +8,17 @@ COMMAND := docker run -it \
 init:
 	$(COMMAND) terraform init
 
+initupgrade:
+	$(COMMAND) terraform init --upgrade
+
 plan:
 	$(COMMAND) terraform plan
 
 apply:
 	$(COMMAND) terraform apply
+
+destroy:
+	$(COMMAND) terraform destroy
 
 shell:
 	$(COMMAND) /bin/sh

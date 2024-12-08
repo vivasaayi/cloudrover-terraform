@@ -17,3 +17,8 @@ variable "deploy_dynamodb" {
   type = bool
   default = false
 }
+
+variable deploy_rds {
+    type    = bool
+    default = false
+}

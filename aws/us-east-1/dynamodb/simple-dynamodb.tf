@@ -1,20 +1,19 @@
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
     count = var.deploy_dynamodb? 1: 0
   name           = "simple-dynamodb"
-  billing_mode   = "PROVISIONED"
-  read_capacity  = 1
-  write_capacity = 1
+  
+  billing_mode   = "PAY_PER_REQUEST"
 
-  hash_key       = "UserId"
-  range_key      = "GameTitle"
+  hash_key       = "Field1"
+  range_key      = "Field2"
 
   attribute {
-    name = "UserId"
+    name = "Field1"
     type = "S"
   }
 
   attribute {
-    name = "GameTitle"
+    name = "Field2"
     type = "S"
   }
 }

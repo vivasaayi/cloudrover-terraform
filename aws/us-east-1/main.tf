@@ -17,3 +17,8 @@ module dynamodb {
     source = "./dynamodb"
     deploy_dynamodb = var.deploy_dynamodb
 }
+
+module rds {
+    source = "./rds"
+    deploy_rds = var.deploy_rds
+}
