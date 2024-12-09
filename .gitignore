@@ -1,2 +1,3 @@
 .terraform/modules
 .terraform
+.terraform.lock.hcl
