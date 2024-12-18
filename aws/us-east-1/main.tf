@@ -22,3 +22,8 @@ module rds {
     source = "./rds"
     deploy_rds = var.deploy_rds
 }
+
+module redis {
+    source = "./redis"
+    deploy_redis = var.deploy_redis
+}

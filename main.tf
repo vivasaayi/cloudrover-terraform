@@ -6,4 +6,5 @@ module aws_useast_1 {
     deploy_s3 = local.scale_config[local.scale_mode].deploy_s3
     deploy_dynamodb =  local.scale_config[local.scale_mode].deploy_dynamodb
     deploy_rds =  local.scale_config[local.scale_mode].deploy_rds
+    deploy_redis =  local.scale_config[local.scale_mode].deploy_redis
 }

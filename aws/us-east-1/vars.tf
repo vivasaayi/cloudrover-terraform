@@ -22,3 +22,8 @@ variable deploy_rds {
     type    = bool
     default = false
 }
+
+variable deploy_redis {
+    type    = bool
+    default = false
+}
