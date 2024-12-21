@@ -1,6 +1,6 @@
 locals {
-  scale_mode = "scaled_down"
-  # scale_mode = "scaled_up"
+  # scale_mode = "scaled_down"
+  scale_mode = "scaled_up"
 
   scale_config = {
     scaled_up = {
