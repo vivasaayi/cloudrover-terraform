@@ -21,3 +21,9 @@ module "encryption" {
 
     deploy_dynamodb = var.deploy_dynamodb
 }
+
+module "global_tables" {
+    source = "./global-tables"
+
+    deploy_dynamodb = var.deploy_dynamodb
+}
