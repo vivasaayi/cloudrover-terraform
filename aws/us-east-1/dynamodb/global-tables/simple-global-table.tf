@@ -63,6 +63,7 @@ resource "aws_dynamodb_table" "simple_global_table_replica2" {
 
 
 resource "aws_dynamodb_global_table" "simple_global_table1" {
+  count = var.deploy_dynamodb? 1: 0
   depends_on = [
     aws_dynamodb_table.simple_global_table_replica1,
     aws_dynamodb_table.simple_global_table_replica2,

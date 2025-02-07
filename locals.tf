@@ -14,8 +14,8 @@ locals {
     scaled_down = {
         deploy_kinesis = false
         deploy_s3 = false
-        deploy_sqs = true
-        deploy_dynamodb = true
+        deploy_sqs = false
+        deploy_dynamodb = false
         deploy_rds = false
         deploy_redis = false
     }
